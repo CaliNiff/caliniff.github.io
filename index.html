@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calin Cojocaru</title>
-  <!-- EDIT: one-line description shown in search results and link previews -->
-  <meta name="description" content="Calin Cojocaru, computer scientist. Projects, CV and contact.">
+  <meta name="description" content="Calin Cojocaru: Computer Science & Engineering student at TU Delft and software developer. Experience, projects, CV and contact.">
   <link rel="icon" href="https://avatars.githubusercontent.com/u/107854130?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,11 +24,12 @@
       font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--text);
       line-height: 1.6; display: flex; justify-content: center; padding: 64px 16px;
     }
-    main { width: 100%; max-width: 560px; }
+    main { width: 100%; max-width: 600px; }
     header { text-align: center; margin-bottom: 40px; }
     .avatar { width: 96px; height: 96px; border-radius: 50%; border: 2px solid var(--border); }
     h1 { font-size: 1.75rem; font-weight: 600; margin-top: 16px; letter-spacing: -0.02em; }
     .headline { font-family: "JetBrains Mono", monospace; font-size: 0.9rem; color: var(--accent); margin-top: 4px; }
+    .location { color: var(--muted); font-size: 0.875rem; }
     .bio { color: var(--muted); margin-top: 16px; }
     h2 {
       font-family: "JetBrains Mono", monospace; font-size: 0.8rem; font-weight: 500;
@@ -37,22 +37,26 @@
     }
     .links { display: grid; gap: 10px; }
     .links a {
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
       padding: 14px 18px; background: var(--card); border: 1px solid var(--border);
       border-radius: 12px; color: var(--text); text-decoration: none; font-weight: 500;
       transition: border-color .15s, transform .15s;
     }
     .links a:hover { border-color: var(--accent); transform: translateY(-1px); }
-    .links a span { color: var(--muted); font-family: "JetBrains Mono", monospace; font-size: 0.8rem; }
-    .project {
-      display: block; padding: 16px 18px; background: var(--card); border: 1px solid var(--border);
-      border-radius: 12px; text-decoration: none; color: var(--text); margin-bottom: 10px;
-      transition: border-color .15s;
+    .links a span {
+      color: var(--muted); font-family: "JetBrains Mono", monospace; font-size: 0.8rem;
+      overflow-wrap: anywhere; text-align: right;
     }
-    .project:hover { border-color: var(--accent); }
-    .project strong { font-weight: 600; }
-    .project p { color: var(--muted); font-size: 0.925rem; margin-top: 4px; }
-    .tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .card {
+      padding: 16px 18px; background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; margin-bottom: 10px;
+    }
+    .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .card strong { font-weight: 600; }
+    .card .meta { color: var(--muted); font-size: 0.8rem; font-family: "JetBrains Mono", monospace; }
+    .card .org { color: var(--muted); font-size: 0.925rem; }
+    .card p { color: var(--muted); font-size: 0.925rem; margin-top: 6px; }
+    .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
     .tags span {
       font-family: "JetBrains Mono", monospace; font-size: 0.72rem; padding: 2px 8px;
       border-radius: 6px; background: var(--accent-soft); color: var(--accent);
@@ -65,33 +69,49 @@
     <header>
       <img class="avatar" src="https://avatars.githubusercontent.com/u/107854130?v=4" alt="Calin Cojocaru">
       <h1>Calin Cojocaru</h1>
-      <!-- EDIT: your headline -->
-      <p class="headline">Computer Science · Software Developer</p>
-      <!-- EDIT: one or two sentences about you -->
-      <p class="bio">I build software and enjoy solving hard problems. Currently looking for opportunities in software engineering.</p>
+      <p class="headline">Student &amp; Software Developer</p>
+      <p class="location">BSc Computer Science &amp; Engineering · TU Delft · Rotterdam, NL</p>
+      <p class="bio">I build full-stack web applications in C#/.NET and React, and enjoy machine learning, algorithms and low-level programming.</p>
     </header>
 
     <h2>Links</h2>
     <nav class="links">
-      <a href="https://github.com/CaliNiff" target="_blank" rel="noopener">GitHub <span>@CaliNiff</span></a>
-      <!-- EDIT: replace the URLs below, or delete a line you don't need -->
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn <span>→</span></a>
       <a href="cv.pdf" target="_blank" rel="noopener">CV / Résumé <span>PDF</span></a>
-      <a href="mailto:you@example.com">Email <span>you@example.com</span></a>
+      <a href="https://www.linkedin.com/in/calin-marcu0" target="_blank" rel="noopener">LinkedIn <span>in/calin-marcu0</span></a>
+      <a href="https://github.com/CaliNiff" target="_blank" rel="noopener">GitHub <span>@CaliNiff</span></a>
+      <a href="mailto:calin.m.cojocaru10@gmail.com">Email <span>calin.m.cojocaru10@gmail.com</span></a>
     </nav>
 
+    <h2>Experience</h2>
+    <div class="card">
+      <div class="card-top"><strong>Software Engineering Intern</strong><span class="meta">Jun 2026 – Present</span></div>
+      <div class="org">Geolog International</div>
+      <p>Building a web-based Action Management System that automates compliance workflows for 15+ QHSE forms, with a workflow state machine for multi-level approvals and hash-chained digital sign-offs.</p>
+      <div class="tags"><span>C# / .NET 10</span><span>EF Core</span><span>SQL Server</span><span>React</span><span>TypeScript</span></div>
+    </div>
+    <div class="card">
+      <div class="card-top"><strong>Full-Stack Developer</strong><span class="meta">Apr 2026 – Jun 2026</span></div>
+      <div class="org">Ador d.o.o.</div>
+      <p>Built an AI-driven audit platform that crawls websites, runs GDPR, SEO and accessibility checks, and generates reports with an LLM. Designed the REST API and implemented the GDPR/cookie module.</p>
+      <div class="tags"><span>ASP.NET Core</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Playwright</span></div>
+    </div>
+
     <h2>Projects</h2>
-    <!-- EDIT: one block per project; copy/paste to add more -->
-    <a class="project" href="https://github.com/CaliNiff/PROJECT-ONE" target="_blank" rel="noopener">
-      <strong>Project one</strong>
-      <p>One sentence on what it does and what you learned or achieved.</p>
-      <div class="tags"><span>C#</span><span>.NET</span></div>
-    </a>
-    <a class="project" href="https://github.com/CaliNiff/PROJECT-TWO" target="_blank" rel="noopener">
-      <strong>Project two</strong>
-      <p>One sentence on what it does and what you learned or achieved.</p>
-      <div class="tags"><span>Python</span></div>
-    </a>
+    <div class="card">
+      <strong>Recommender System</strong>
+      <p>User-user and item-item collaborative filtering with Min-Hashing (LSH) and NMF, reaching 82% accuracy using only NumPy linear algebra.</p>
+      <div class="tags"><span>Python</span><span>NumPy</span><span>Jupyter</span></div>
+    </div>
+    <div class="card">
+      <strong>Grocery Product Classifier</strong>
+      <p>A neural network written from scratch, with no ML frameworks, reaching ~92% accuracy on a 7-class task.</p>
+      <div class="tags"><span>Python</span><span>NumPy</span></div>
+    </div>
+    <div class="card">
+      <strong>Brainfuck Interpreter</strong>
+      <p>An interpreter in x86 assembly that uses a jump table for constant-time instruction decoding, cutting execution time by over 80%.</p>
+      <div class="tags"><span>x86 Assembly</span><span>AT&amp;T syntax</span></div>
+    </div>
 
     <footer>© 2026 Calin Cojocaru</footer>
   </main>
